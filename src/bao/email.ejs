@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Vêtir</title>
+    <style>
+        /* Add your CSS styles here */
+        .logo {
+            display: block;
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://stylistadminassets.s3.ap-south-1.amazonaws.com/vetir-new.png" alt="Vêtir Logo" class="logo">
+        <!-- Replace "logo.png" with the path to your logo image -->
+        <h1>Hello - <%= username %>
+        </h1>
+        <p>Welcome to Vêtir, your global personal shopping and styling tool! We are excited to invite you to access the
+            Vêtir administration panel where you will be able to manage your product feeds, individual client data, and
+            sales data.</p>
+        <p>Your personal account details are accessible via the log-in credentials noted below:</p>
+        <ul>
+            <li>Username: <%= username %>
+            </li>
+            <li>Password: <%= password %>
+            </li>
+        </ul>
+        <p>Please visit the Vêtir administration panel at <a
+                href="https://vetir-admin.netlify.app/">https://vetir-admin.netlify.app/</a> to log in and begin
+            managing your account.</p>
+        <p>We recommend you change your personal password for added security upon initial log-in.</p>
+        <p>If you have any trouble logging in or navigating through the administration panel, please reach out to
+            contact@bond-nyc.com by email or +19179133131 on WhatsApp.</p>
+        <p>Thank you for becoming a part of the Vêtir experience!</p>
+    </div>
+</body>
+
+</html>
